@@ -1,6 +1,5 @@
 .header {
   align-items: center;
-  background-color: #ccc;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -19,4 +18,15 @@
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.contrastBtn {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.button {
+  border-radius: 7px;
+  cursor: pointer;
 }
