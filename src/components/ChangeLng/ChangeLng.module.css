@@ -3,3 +3,8 @@
   display: flex;
   justify-content: center;
 }
+
+.button {
+  border-radius: 7px;
+  cursor: pointer;
+}

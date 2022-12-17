@@ -15,9 +15,10 @@ const ChangeLng = () => {
     <div className={classes.container}>
       {Object.keys(lngs).map((lng) => (
         <button
+          className={classes.button}
+          disabled={i18n.resolvedLanguage === lng}
           key={lng}
           onClick={() => i18n.changeLanguage(lng)}
-          disabled={i18n.resolvedLanguage === lng}
         >
           {lngs[lng].nativeName}
         </button>

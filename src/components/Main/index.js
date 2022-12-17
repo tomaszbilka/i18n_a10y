@@ -20,26 +20,36 @@ const Main = () => {
       <h1 className={classes.title}>{t('title', { ns: 'main' })}</h1>
       <section>
         <h2>{t('subtitle', { ns: 'main' })}</h2>
-        <button onClick={addItemHandler}>+</button>
-        <button onClick={removeItemHandler} disabled={count === 0}>
+        <button className={classes.btn} onClick={addItemHandler}>
+          +
+        </button>
+        <button
+          className={classes.btn}
+          disabled={count === 0}
+          onClick={removeItemHandler}
+        >
           -
         </button>
         <div>
           {t('score', { ns: 'main' })}:
-          {t('opinion', { ns: 'main', count: count })}
+          <span className={classes.span}>
+            {t('opinion', { ns: 'main', count: count })}
+          </span>
         </div>
       </section>
       <section>
         <h2>{t('secondTitle', { ns: 'main' })}</h2>
         <p>
           {t('noTranslationText', { ns: 'main' })}:
-          <span>
+          <span className={classes.span}>
             {t('word', { ns: 'main', defaultValue: 'default value' })}
           </span>
         </p>
         <p>
           {t('fallback', { ns: 'main' })}:
-          <span>{t('fallbackWord', { ns: 'main' })}</span>
+          <span className={classes.span}>
+            {t('fallbackWord', { ns: 'main' })}
+          </span>
         </p>
       </section>
       <section>
