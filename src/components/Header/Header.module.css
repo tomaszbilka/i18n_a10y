@@ -1,0 +1,22 @@
+.header {
+  align-items: center;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.accent {
+  font-weight: 800;
+}
+
+.lng {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
