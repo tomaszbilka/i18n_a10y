@@ -4,7 +4,7 @@ Project shows basic set up and usage `react-i18next` package to deal with i18n a
 
 ### Get started
 
-Clone repository, next typ in project folder
+Clone repository, next type in console inside yours project folder
 
 ### `npm install`
 
