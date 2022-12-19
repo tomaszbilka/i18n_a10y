@@ -1,6 +1,6 @@
 ### App
 
-Project shows basic set up and usage `react-i18next` package to deal with i18n and it tries to follow best a10y practises.
+Project shows basic set up and usage `react-i18next` package to deal with i18n and it tries to follow best a11y practises.
 
 ### Get started
 
