@@ -1,21 +1,21 @@
-name: Lighthouse Check
-on: [pull_request]
-
+name: CI Lighthouse
+on: [push]
 jobs:
-  lighthouse-check:
+  lighthouseci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - run: mkdir /tmp/artifacts
-      - name: Run Lighthouse
-        uses: foo-software/lighthouse-check-action@master
+      - uses: actions/checkout@v1
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
         with:
-          outputDirectory: /tmp/artifacts
-          urls: 'http://localhost:3000/'
-      - name: Upload artifacts
-        uses: actions/upload-artifact@master
-        with:
-          name: Lighthouse reports
-          path: /tmp/artifacts
+          node-version: 18.x
+      - name: npm install, build
+        run: |
+          yarn
+          npm run build
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.3.x
+          lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
