@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
+import Details from '../Details/Details';
 
 import classes from './Main.module.css';
 
@@ -63,6 +64,20 @@ const Main = () => {
             <b>Click</b> to go to my <a href="https://bbdev.pl/">portfolio</a>
           </p>
         </Trans>
+      </section>
+      <section className={classes.details}>
+        <Details
+          title={t('bike', { ns: 'main' })}
+          description={t('bikesDescription', { ns: 'main' })}
+        />
+        <Details
+          title={t('car', { ns: 'main' })}
+          description={t('carsDescription', { ns: 'main' })}
+        />
+        <Details
+          title={t('doll', { ns: 'main' })}
+          description={t('dollsDescription', { ns: 'main' })}
+        />
       </section>
     </>
   );

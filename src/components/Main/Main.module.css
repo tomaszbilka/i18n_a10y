@@ -28,3 +28,10 @@ section {
   font-weight: 700;
   margin-left: 5px;
 }
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}

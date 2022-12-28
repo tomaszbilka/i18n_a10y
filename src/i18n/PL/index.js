@@ -3,6 +3,12 @@ export const pl = {
     title: 'i18 oraz i10n',
   },
   main: {
+    bike: 'rower',
+    bikesDescription: 'Tutaj jest opis tego fajnego roweru',
+    car: 'samochód',
+    carsDescription: 'Tutaj jest opis tego fajnego samochodu',
+    doll: 'lalka',
+    dollsDescription: 'Tutaj jest opis tej fajnej lalki',
     fallback: 'Następne słowa mają tylko tłumaczenie EN',
     fourthTitle: 'Użyj znaczników HTML wewnątrz tłumaczeń',
     invokeHTML: ` <0><0>Kliknij</0> aby przejść do mojego <2>portfolio</2></0>`,

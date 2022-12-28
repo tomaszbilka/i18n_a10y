@@ -3,6 +3,12 @@ export const en = {
     title: 'i18 and i10n',
   },
   main: {
+    bike: 'bike',
+    bikesDescription: 'Here is some description of this really fine bike',
+    car: 'car',
+    carsDescription: 'Here is some description of this really fine car',
+    doll: 'doll',
+    dollsDescription: 'Here is some description of this really fine doll',
     fallback: 'Following sentence is only translated in EN',
     fallbackWord: 'only in English!',
     fourthTitle: 'Use HTML elements inside translation',
