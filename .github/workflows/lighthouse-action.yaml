@@ -4,8 +4,11 @@ jobs:
   lighthouseci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
       - run: npm install && npm install -g @lhci/cli@0.6.x
       - run: npm run build
       - run: lhci autorun
